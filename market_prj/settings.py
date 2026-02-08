@@ -83,18 +83,18 @@ AUTHENTICATION_BACKENDS = (
 )
 
 DATABASES = {
-    'default': {
-        'NAME': 'market_prj_db',
-        'ENGINE': 'django.db.backends.postgresql',
-        'USER': 'postgres',
-        'PASSWORD': 'postgres',
-        'HOST': 'localhost',
-        'PORT': '5434',
-    }
     # 'default': {
-    #     'ENGINE': 'django.db.backends.sqlite3',
-    #     'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        # 'NAME': 'market_prj_db',
+        # 'ENGINE': 'django.db.backends.postgresql',
+        # 'USER': 'postgres',
+        # 'PASSWORD': 'postgres',
+        # 'HOST': 'localhost',
+        # 'PORT': '5434',
     # }
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
 }
 
 # Password validation
